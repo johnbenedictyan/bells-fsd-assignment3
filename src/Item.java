@@ -4,10 +4,10 @@ import java.util.Scanner;
  * Item
  */
 public class Item implements Editable<Item> {
-    public String name;
-    public double price;
-    public int stock;
-    public String rarity;
+    private String name;
+    private double price;
+    private int stock;
+    private String rarity;
 
     public Item() {
         this.name = "Unknown Item";
@@ -45,6 +45,10 @@ public class Item implements Editable<Item> {
     @Override
     public String toString() {
         return String.format("Name: %s, Price: %.2f, Quantity: %d", this.name, this.price, this.stock);
+    }
+
+    public String getRarity() {
+        return this.rarity;
     }
 
 }

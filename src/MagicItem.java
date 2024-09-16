@@ -24,8 +24,6 @@ public class MagicItem extends Item {
         System.out.println("Enter the new element");
         String element = sc.nextLine();
         this.element = element;
-
-
     }
 
 }
